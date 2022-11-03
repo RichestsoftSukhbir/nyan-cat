@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: #040621;
+        }
+        .nyan-cat {
+            position: absolute;
+            width: 65%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            /* z-index: 2; */
+        }
+    </style>
+    <link rel="stylesheet" href="particle.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./nyan-cat.gif" class="nyan-cat" alt="">
+        <div id="particles-js"></div> <!-- stats - count particles -->
+    </div>
+    <!-- particles.js container -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="./particle.js"></script>
+</body>
+
+</html>
